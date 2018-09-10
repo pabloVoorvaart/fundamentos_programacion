@@ -1,4 +1,5 @@
-# fundamentos_programacion
+## Taller de Fundamentos de programacion:
+
 Practicas resueltas de fundamentos de programacion.
 
 Clase GM14 (o algo asi).
