@@ -25,7 +25,7 @@ int main(){
 */
 
 
-//Resoulcion de problema, nivel me creo superior a los demas.
+// Resoulcion de problema, nivel me creo superior a los demas.
 /*
 int main(){
     //Utilizamos un contador n+1 para hacer que se ejecute un while loop 10 veces.
@@ -42,13 +42,13 @@ int main(){
 
 // Resolucion de problema, nivel esto no es necesario pero me aburro.
 
-int main()
-{
+int main(){
+    // Utilizamos dos contadores para printear todas las tablas de multiplicar.
     int n = 1;
     while( n < 11 ) {
         printf("\nTabla del %d\n", n);
         int x = 1;
-        while ( x < 11){
+        while ( x < 11 ){
             printf("%d * %d = %d\n",n,x, x*n);
             x++;
         }
