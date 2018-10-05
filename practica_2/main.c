@@ -1,5 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+/*
+Escrito por Pablo Voorvaart.
+El enuciado dice que a>b>c es creciente pero eso es decreciente....
+*/
 
 int main()
 {
