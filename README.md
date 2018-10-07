@@ -1,11 +1,12 @@
 ## Taller de Fundamentos de programacion:
 
-Practicas resueltas de fundamentos de programacion.
+Practicas resueltas de fundamentos de programacion. (No se garantiza que esten bien al 100%).
 
-Clase GM14 (o algo asi).
+Clase GM14.
 
-Para contribuir hacer un pull request. Si quieres contribuir pero no sabes como funciona git, preguntar por Pablo Voorvaart y te explico como funciona.
+Cuantos mas contribuyamos mejor. Si quieres aportar a esta colecion de practicas resueltas por favor pregunta por Pablo Voorvaart.
 
 Estaria bien que la gente realizase preguntas en el apartado de issues para que se queden documentadas.
 
 
+Current contributors: Mario.SO aka Mario, PabloVoorvaart aka yo.
