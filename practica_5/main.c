@@ -3,32 +3,32 @@
 
 int main()
 {
-    FILE *fichero;
+    FILE *entrada;
     FILE *mayusculas;
     char car;
-    fichero= fopen("file.txt", "r");
+    entrada= fopen("entrada.txt", "r");
 
-    if (fichero==NULL)
+    if (entrada==NULL)
     {
-        printf ("Nose puede acceder");
+        printf ("No se puede acceder\n");
     }
     else
     {
         mayusculas = fopen ("mayusculas.txt", "w");
 
-        fscanf(fichero, "%c", &car);
-        while(!feof(fichero))
+        fscanf(entrada, "%c", &car);
+        while(!feof(entrada))
         {
             //convertir a mayusc
             if (car >= 'a' && car <= 'z') car = 'A'+car-'a';
-            //escribe en fichero mayusculas + printear mayuscula
+            //escribe en entrada mayusculas + printear mayuscula
             printf("%c", car);
             fprintf(mayusculas, "%c", car);
-            //vuelve a escanear el fichero
-            fscanf(fichero, "%c", &car);
+            //vuelve a escanear el entrada
+            fscanf(entrada, "%c", &car);
         }
 
-        fclose(fichero);
+        fclose(entrada);
         fclose(mayusculas);
     }
     return 0;
