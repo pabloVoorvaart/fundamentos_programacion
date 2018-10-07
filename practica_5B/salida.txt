@@ -1,0 +1,6 @@
+When push.default is set to 'matching', git will push local branches
+o the remote branches that already exist with the same name. Since Git 2.0, Git defaults to the more conservative 'simple'
+ehavior, which only pushes the current branch to the corresponding
+emote branch that 'git pull' uses to update the current branch. See 'git help config' and search for 'push.default' for further information.
+the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+
