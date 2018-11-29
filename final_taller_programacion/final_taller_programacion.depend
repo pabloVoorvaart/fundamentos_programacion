@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1543335046 source:/home/pablov/Nextcloud/fundamentos_programacion/final_taller_programacion/main.c
+	<stdio.h>
+	<stdlib.h>
+
