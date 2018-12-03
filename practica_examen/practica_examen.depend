@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1539941880 source:/home/pablov/Nextcloud/fundamentos_programacion/practica_examen/main.c
+	<stdio.h>
+	<stdlib.h>
+
