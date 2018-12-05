@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #define N 20
+#define P 2
 struct Tpunto         // punto en un plano, x abscisas, y ordenadas
 {
     float x;
@@ -29,34 +30,34 @@ struct TlistaCirculos       //Lista de circulos
 int leerPuntos (struct TlistaPuntos *lista);
 int puntoEnCirculo(float dist_eculidea, float radio);
 void leerCirculo(struct Tcirculo *circulo);
-
 void escribirPuntos(struct TlistaPuntos *lista);
-
 float calcularDistancia(float x[1], float y[1]);
 
 int main()
 {
-    int cont;
-    float x[1], y[1];
+    int cont, t;
+    float x[P], y[P];
     struct TlistaPuntos lista;
     struct Tcirculo circulo;
 
-    leerCirculo(&circulo);
     leerPuntos(&lista);
+    leerCirculo(&circulo);
 
-    for(cont=0; cont<lista.tam; cont++)
+    t = lista.tam;
+    for(cont=0; cont<t; cont++)
     {
         x[0]= lista.puntos[cont].x;
         x[1]= lista.puntos[cont].y;
         y[0]= circulo.centro.x;
         y[1]= circulo.centro.y;
-        printf("distancia is = %f" , calcularDistancia(x, y));
         if(puntoEnCirculo(calcularDistancia(x, y), circulo.radio))
         {
-           printf("el punto %f, %f esta dentro del circulo\n.", x[0],x[1]);
+           printf("El punto %f, %f esta dentro del circulo.\n\n", x[0], x[1]);
         }
         else
         {
+          printf("El punto %f, %f no esta dentro del circulo.\n\n", x[0], x[1]);
+
         }
     }
     return 0;
@@ -71,10 +72,8 @@ void leerCirculo(struct Tcirculo *circulo)
     printf("Indique un punto central para el circulo\n");
     printf(" Punto x: ");
     scanf("%f", &circulo->centro.x);
-    printf("\n");
     printf(" Punto y: ");
     scanf("%f", &circulo->centro.y);
-    printf("\n");
 }
 
 int leerPuntos (struct TlistaPuntos *lista)
@@ -123,7 +122,6 @@ void escribirPuntos (struct TlistaPuntos *lista)
     {
         printf("pos[%d] %f | %f\n", cont, lista->puntos[cont].x, lista->puntos[cont].y);
     }
-
 }
 
 float calcularDistancia(float x[1], float y[1])
@@ -131,21 +129,24 @@ float calcularDistancia(float x[1], float y[1])
     float x2x1, y2y1, result;
     x2x1=x[1]-x[0];
     y2y1=y[1]-y[0];
+    printf("====================\n");
+    printf("x2x1: %f-%f=%f\n", x[1], x[0], x2x1);
+    printf("x2x1*x2x1 = %f\n", x2x1*x2x1);
+    printf("y2y1: %f-%f=%f\n", y[1], y[0], y2y1);
+    printf("y2y1*y2y1 = %f\n", y2y1*y2y1);
+    printf("x2x1^2+y2y1^2 = %f\n", (x2x1*x2x1)+(y2y1*y2y1));
     result=sqrt(((x2x1*x2x1)+(y2y1*y2y1)));
+    printf("El resultado es %f\n", result);
+    printf("====================\n\n");
     return result;
 }
 
 int puntoEnCirculo(float dist_eculidea, float radio)
 {
-    printf("\n%f\n", dist_eculidea);
-    printf("\n%f\n", radio);
+    // printf("\n%f\n", dist_eculidea);
+    // printf("\n%f\n", radio);
     if(dist_eculidea>radio)
         return 0;
     if(dist_eculidea<radio)
         return 1;
 }
-
-
-
-
-
