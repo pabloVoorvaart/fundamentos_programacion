@@ -1,4 +1,4 @@
-## Taller de Fundamentos de programacion:
+## Taller de Fundamentos de programación:
 
 Prácticas resueltas de fundamentos de programación. (No se garantiza que esten bien al 100%).
 
