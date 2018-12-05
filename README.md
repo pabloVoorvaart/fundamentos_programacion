@@ -11,4 +11,4 @@ Estaria bien que la gente realizase preguntas en el apartado de issues para que 
 
 Current contributors: Mario.SO aka Mario, PabloVoorvaart aka yo.
 
-Currently missing: practica 9, practica 10, practica 12.
+Currently missing: practica4, practica 9, practica 10, practica 12.(practica 7 y 14 son practicas evaluables y no se añadiran al repo).
