@@ -10,3 +10,5 @@ Estaria bien que la gente realizase preguntas en el apartado de issues para que 
 
 
 Current contributors: Mario.SO aka Mario, PabloVoorvaart aka yo.
+
+Currently missing: practica 9, practica 10, practica 12.
