@@ -129,15 +129,15 @@ float calcularDistancia(float x[1], float y[1])
     float x2x1, y2y1, result;
     x2x1=x[1]-x[0];
     y2y1=y[1]-y[0];
-    printf("====================\n");
-    printf("x2x1: %f-%f=%f\n", x[1], x[0], x2x1);
-    printf("x2x1*x2x1 = %f\n", x2x1*x2x1);
-    printf("y2y1: %f-%f=%f\n", y[1], y[0], y2y1);
-    printf("y2y1*y2y1 = %f\n", y2y1*y2y1);
-    printf("x2x1^2+y2y1^2 = %f\n", (x2x1*x2x1)+(y2y1*y2y1));
-    result=sqrt(((x2x1*x2x1)+(y2y1*y2y1)));
-    printf("El resultado es %f\n", result);
-    printf("====================\n\n");
+    // printf("====================\n");
+    // printf("x2x1: %f-%f=%f\n", x[1], x[0], x2x1);
+    // printf("x2x1*x2x1 = %f\n", x2x1*x2x1);
+    // printf("y2y1: %f-%f=%f\n", y[1], y[0], y2y1);
+    // printf("y2y1*y2y1 = %f\n", y2y1*y2y1);
+    // printf("x2x1^2+y2y1^2 = %f\n", (x2x1*x2x1)+(y2y1*y2y1));
+    // result=sqrt(((x2x1*x2x1)+(y2y1*y2y1)));
+    // printf("El resultado es %f\n", result);
+    // printf("====================\n\n");
     return result;
 }
 
